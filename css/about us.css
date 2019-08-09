@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+.header {
+  overflow: hidden;
+  /*background-color: red;*/
+  padding: 20px 130px;
+  z-index: 99999999;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight:bolder;
+  letter-spacing: 3px;
+}
+
+.header a:hover {
+  color: dodgerblue;
+}
+
+.header a.active {
+  color: dodgerblue;
+}
+
+.header-right {
+  float: right;
+}
+.header-center{
+   float: none;
+  position: absolute;
+  top: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: dodgerblue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content-right{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content-right a{
+   float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content-right :hover{
+  display: inline-block;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+/*content css*/
+.container-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: -99999;
+}
+
+.container-content img {vertical-align: middle;}
+
+.container-content .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
